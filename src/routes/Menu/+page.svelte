@@ -178,7 +178,7 @@
 					del deporte, sin olvidar también la incentivación al adquirir un conocimiento sobre este
 					mundo tan vasto.
 				</p>
-				<a href="/" class="btn__text-about btn__text">Saber Más</a>
+				<a href="/Menu" class="btn__text-about btn__text" data-sveltekit-preload-data="tap" data-sveltekit-reload>Saber Más</a>
 			</div>
 			<div class="image__about">
 				<img src={Corredor1} alt="Corredor 1" />
