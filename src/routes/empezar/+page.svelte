@@ -37,7 +37,7 @@
 		{ name: 'Golf', logo: gf, href: '/empezar' },
 		{ name: 'Ciclismo', logo: cy, href: '/empezar' },
 		{ name: 'Natación', logo: na, href: '/empezar' },
-		{ name: 'Atletismo', logo: at, href: '/empezar' },
+		{ name: 'Atletismo', logo: at, href: '/atletismo' },
 		{ name: 'Rugby', logo: rg, href: '/empezar' },
 		{ name: 'Fórmula 1', logo: fi, href: '/formula1' },
 		{ name: 'Hockey', logo: ho, href: '/empezar' },

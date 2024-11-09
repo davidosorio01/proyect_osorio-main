@@ -30,7 +30,7 @@ section[id]{
 }
 
 body{
-    background-color: #b60f1d;
+    background-color: #eee;
     font-family: sans-serif;
     user-select: none;
 }
@@ -241,7 +241,7 @@ nav ul li a:hover::after {
 .container__cover{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: var(--main_color-secundary);
+    background: #eee;
 }
 
 .cover{
@@ -262,7 +262,7 @@ nav ul li a:hover::after {
 
 .text__cover h1{
     font-size: 50px;
-    color: white;
+    color: black;
 }
 
 .text__cover p{
@@ -373,7 +373,7 @@ img{
 /*Sobre Nosotros*/
 .container__about{
     padding: 100px 0px;
-    background: #b60f1d;
+    background: #eee;
     margin-top: 100px;
 
 }
@@ -393,7 +393,7 @@ img{
 }
 
 .text__about h1{
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
@@ -441,7 +441,7 @@ a{
 /* footer*/
 
 footer {
-    background-color: #b60f1d;
+    background-color: #eee;
     color: black; 
     padding: 20px 0;
 }
@@ -541,7 +541,7 @@ svg{
 
 .box__footer h2{
     margin-bottom: 30px;
-    color: #FAFBFE;
+    color: black;
     font-weight: 700;
 }
 
