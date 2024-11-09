@@ -4,7 +4,7 @@
 	import LogoPagina from "$lib/IMAGES/LogoPag.jpg";
     import juego1 from '$lib/IMAGES/images_beisbol/Juego1beisbol.jpeg';
     import juego2 from '$lib/IMAGES/images_beisbol/Juego2beisbol.jpeg';
-    import juego3 from '$lib/IMAGES/images_beisbol/Juego3beisbol.jpeg';
+    import juego3 from '$lib/IMAGES/images_beisbol/Juego3Beisbol.jpeg';
 </script>
 
 <div>  
