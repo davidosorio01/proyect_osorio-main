@@ -33,7 +33,7 @@
 	const deportes = [
 		{ name: 'Futbol', logo: fb, href: '/futbol'},
 		{ name: 'Baloncesto', logo: bs, href: '/baloncesto'},
-		{ name: 'Béisbol', logo: be, href: '/empezar'},
+		{ name: 'Béisbol', logo: be, href: '/beisbol'},
 		{ name: 'Golf', logo: gf, href: '/empezar' },
 		{ name: 'Ciclismo', logo: cy, href: '/empezar' },
 		{ name: 'Natación', logo: na, href: '/empezar' },
