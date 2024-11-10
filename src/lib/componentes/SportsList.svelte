@@ -33,7 +33,7 @@
 		{ name: 'Béisbol', logo: be, href: '/beisbol'},
 		{ name: 'Golf', logo: gf, href: '/golf' },
 		{ name: 'Ciclismo', logo: cy, href: '/ciclismo' },
-		{ name: 'Natación', logo: na, href: '/empezar' },
+		{ name: 'Natación', logo: na, href: '/natacion' },
 		{ name: 'Atletismo', logo: at, href: '/atletismo' },
 		{ name: 'Rugby', logo: rg, href: '/empezar' },
 		{ name: 'Fórmula 1', logo: fi, href: '/formula1' },
