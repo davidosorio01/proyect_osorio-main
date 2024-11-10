@@ -6,7 +6,7 @@
     import juego2 from '$lib/IMAGES/images_beisbol/Juego2beisbol.jpeg';
     import juego3 from '$lib/IMAGES/images_beisbol/Juego3Beisbol.jpeg';
 </script>
-
+    
 <div>  
     <div id="loading-screen">  
         <div id="loading-spinner"></div>  

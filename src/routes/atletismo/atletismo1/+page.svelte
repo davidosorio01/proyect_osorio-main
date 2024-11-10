@@ -5,6 +5,7 @@
     import Trofeo from '$lib/IMAGES/images_atletismo/TrofeoAtletismo.webp';
     import UsainBolt from '$lib/IMAGES/images_atletismo/UsainBolt.jpg';
     import MariaMutola from '$lib/IMAGES/images_atletismo/MariaMutola.jpeg';
+    import jesse from '$lib/IMAGES/images_atletismo/JesseOwens.jpeg'
 </script>
 
 <header>  
@@ -102,7 +103,7 @@
             </div>
             <div class="card">
                 <div class="player">
-                    <img src="../Cards img/Jesse Owens.jpeg" alt="Jesse Owens">
+                    <img src={jesse} alt="Jesse Owens">
                 </div>
                 <div class="intro">
                     <h1>¿Quién fue Jesse Owens?</h1>
