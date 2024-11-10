@@ -113,7 +113,7 @@
 	</div>
 
 	<a
-		href="../Pantalla de busqueda/Busqueda.html"
+		href="/empezar"
 		data-sveltekit-reload=""
 		data-sveltekit-preload-data="tap"
 	>
