@@ -39,7 +39,7 @@
 		{ name: 'Rugby', logo: rg, href: '/rugby' },
 		{ name: 'Fórmula 1', logo: fi, href: '/formula1' },
 		{ name: 'Hockey', logo: ho, href: '/empezar' },
-		{ name: 'Boxeo', logo: bx, href: '/empezar' },
+		{ name: 'Boxeo', logo: bx, href: '/boxeo' },
 		{ name: 'Artes marciales mixtas', logo: ar, href: '/empezar' },
 		{ name: 'Cricket', logo: cr, href: '/empezar' },
 		{ name: 'Badminton', logo: ba, href: '/empezar' },
