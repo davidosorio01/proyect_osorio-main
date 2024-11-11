@@ -4,6 +4,7 @@
     let signIn = false;
     import '$lib/CSS/inicio_sesion.css';
     import Swal from 'sweetalert2';
+    
 
     // Función para mostrar el modal
     function showWelcomeModal() {
@@ -63,9 +64,6 @@
         <form class="sign-in" action="?/login" method="POST" on:submit|preventDefault={handleSubmit}>
             <h2>Iniciar Sesión</h2>
             <div class="social-networks">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-google"></ion-icon>
             </div>
             {#if form?.invalid}
                 <p class="error">Se requiere nombre de usuario y contraseña</p>
@@ -100,9 +98,6 @@
         <form class="sign-up" action="?/register" method="POST" on:submit|preventDefault={handleSubmit}>
             <h2>¿No tienes una cuenta?¡Registrate!</h2>
             <div class="social-networks">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-google"></ion-icon>
             </div>
             <span>Ingresa los siguientes datos para registrarte</span>
             <div class="container-input">

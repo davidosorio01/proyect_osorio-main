@@ -40,7 +40,7 @@
 
 				Swal.fire({
 					title: 'Éxito',
-					text: 'Mensaje enviado exitosamente',
+					text: 'Mensaje enviado exitosamente. Pronto estaremos analizando tu sugerencia o situación.',
 					icon: 'success',
 					confirmButtonText: 'Aceptar'
 				}).then((result) => {
