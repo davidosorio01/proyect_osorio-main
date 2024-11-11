@@ -42,7 +42,7 @@
 		{ name: 'Boxeo', logo: bx, href: '/boxeo' },
 		{ name: 'Artes marciales mixtas', logo: ar, href: '/empezar' },
 		{ name: 'Cricket', logo: cr, href: '/empezar' },
-		{ name: 'Badminton', logo: ba, href: '/empezar' },
+		{ name: 'Badminton', logo: ba, href: '/badminton' },
 		{ name: 'Lacrosse', logo: la, href: '/empezar' },
 		{ name: 'Billar', logo: bi, href: '/empezar' },
 		{ name: 'Esgrima', logo: es, href: '/empezar' },
@@ -73,3 +73,12 @@
         </a>
     {/each}
 </div>
+
+<style>
+
+.text h3,
+.text p {
+    color: black;
+}
+
+</style>
