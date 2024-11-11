@@ -1,6 +1,7 @@
 <script>  
 	let { data } = $props();  
 	let { jugadores } = data;
+	import BotonVolver from "$lib/componentes/BotonVolver.svelte";
     import "$lib/CSS/prueba.css";
 	import LogoPagina from "$lib/IMAGES/LogoPag.jpg";
 </script>  
