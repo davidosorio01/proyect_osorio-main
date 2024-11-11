@@ -29,10 +29,12 @@
 	import pa from '$lib/IMAGES/images_empezar/PatinajeArtistico.png';
 	import rg from '$lib/IMAGES/images_empezar/Rugby.png';
 	import sk from '$lib/IMAGES/images_empezar/Skate.png';
+	import te from '$lib/IMAGES/images_empezar/Tenis.webp'
 
 	const deportes = [
 		{ name: 'Futbol', logo: fb, href: '/futbol'},
 		{ name: 'Baloncesto', logo: bs, href: '/baloncesto'},
+		{ name: 'Tenis', logo: te, href: '/tenis'},
 		{ name: 'Béisbol', logo: be, href: '/beisbol'},
 		{ name: 'Golf', logo: gf, href: '/golf' },
 		{ name: 'Ciclismo', logo: cy, href: '/ciclismo' },
@@ -55,7 +57,7 @@
 		{ name: 'Balonmano', logo: bm, href: '/balonmano' },
 		{ name: 'MotoGP', logo: mo, href: '/motociclismo' },
 		{ name: 'Ultimate Frisbee', logo: fr, href: '/empezar' },
-		{ name: 'Ajedrez', logo: aj, href: '/empezar' }
+		{ name: 'Ajedrez', logo: aj, href: '/ajedrez' }
 	];
 
 	let searchValue = '';
