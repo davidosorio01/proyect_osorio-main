@@ -8,7 +8,7 @@
 
 <div class="navbar" data-sveltekit-preload-data="tap" data-sveltekit-reload>
     <img src={LogoPagina} alt="Logo">
-    <a href="/Menu"  class="back-button">
+    <a href="/empezar"  class="back-button">
         <i  class="fas fa-arrow-left"></i> Volver
     </a>
 </div>
