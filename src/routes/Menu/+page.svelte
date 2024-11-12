@@ -36,15 +36,15 @@
 	// Llamar a la función al iniciar el componente (cuando se monta)
 	showWelcomeModal();
 
-    // Función para mostrar el modal de inicio de sesión
-    function showLoginModal() {
-        Swal.fire({
-            title: '¡Ya estás vinculado!',
-            text: 'No necesitas iniciar sesión nuevamente.',
-            icon: 'info',
-            confirmButtonText: 'Continuar',
-        });
-    }
+	// Función para mostrar el modal de inicio de sesión
+	function showLoginModal() {
+		Swal.fire({
+			title: '¡Ya estás vinculado!',
+			text: 'No necesitas iniciar sesión nuevamente.',
+			icon: 'info',
+			confirmButtonText: 'Continuar'
+		});
+	}
 
 	let currentSlide = 0;
 	const slides = [
@@ -106,6 +106,7 @@
 
 <svelte:head>
 	<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
 </svelte:head>
 <!-- Aquí va el resto de tu componente -->
 <main>
@@ -113,9 +114,12 @@
 		<div class="container">
 			<div class="container__header">
 				<div class="logo" data-sveltekit-preload-data="tap" data-sveltekit-reload>
-					<a href="/">
-						<img src={LogoPagina} alt="Logo" />
-					</a>
+					<h2>
+						<a href="/Menu" class="brand" data-sveltekit-preload-data="tap" data-sveltekit-reload>
+							<i class="bx bx-run"></i>
+							<span class="text">SPORT SCORE</span>
+						</a>
+					</h2>
 				</div>
 				<div class="menu">
 					<nav>
@@ -178,7 +182,12 @@
 					del deporte, sin olvidar también la incentivación al adquirir un conocimiento sobre este
 					mundo tan vasto.
 				</p>
-				<a href="/Menu" class="btn__text-about btn__text" data-sveltekit-preload-data="tap" data-sveltekit-reload>Saber Más</a>
+				<a
+					href="/Menu"
+					class="btn__text-about btn__text"
+					data-sveltekit-preload-data="tap"
+					data-sveltekit-reload>Saber Más</a
+				>
 			</div>
 			<div class="image__about">
 				<img src={Corredor1} alt="Corredor 1" />
@@ -218,7 +227,14 @@
 	<div class="container__footer" id="Contactanos">
 		<div class="box__footer">
 			<div class="logo">
-				<img src={LogoPagina} alt="Logo" />
+				<div class="logo2">
+					<h2>
+						<a href="/Menu" class="brand" data-sveltekit-preload-data="tap" data-sveltekit-reload>
+							<i class="bx bx-run"></i>
+							<span class="text">SPORT SCORE</span>
+						</a>
+					</h2>
+				</div>
 			</div>
 			<div class="terms">
 				<p>
@@ -271,6 +287,14 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+	.logo2 .brand i,
+	.logo2 .brand .text {
+		color: #b60f1d;
+	}
+	.logo .brand span,
+	i {
+		color: white;
+	}
 	:global(*) {
 		margin: 0;
 		padding: 0;

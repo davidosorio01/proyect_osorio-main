@@ -61,6 +61,11 @@
 	}
 </script>
 
+<svelte:head>
+	<link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</svelte:head>
+
 <section>
 	<div class="color"></div>
 	<div class="color"></div>
@@ -82,9 +87,9 @@
 					comentario; estamos aquí para escucharte y hacer de nuestra plataforma un lugar aún más
 					valioso para ti.
 				</p>
-				<p><i class="fa fa-phone"></i> 319 6170872</p>
-				<p><i class="fa fa-envelope"></i> sportscores24@gmail.com</p>
-				<p><i class="fa fa-map-marked"></i> Medellín, Colombia</p>
+				<p><i class="material-icons">phone</i> 319 6170872</p>
+				<p><i class="material-icons">email</i> sportscores24@gmail.com</p>
+				<p><i class="material-icons">location_on</i> Medellín, Colombia</p>
 			</div>
 			<form
 				method="POST"
