@@ -11,6 +11,7 @@ declare global {
 				passwordHash: string | null
 				token: string | null
 				nacimiento: Date | null;
+				userId: number | null;
 			}
 			
 		 }

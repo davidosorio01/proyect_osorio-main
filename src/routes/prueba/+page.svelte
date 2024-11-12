@@ -51,7 +51,6 @@
 				<h2>Grado: {jugador.grado}</h2>
 				<form action="?/editar" method="POST" style="display:inline;">
 					<input type="hidden" name="id" value={jugador.id} />
-					<button formaction="?/editar" class="editar"> Editar </button>
 				</form>
 				<form action="?/borrar" method="POST" style="display:inline;">
 					<input type="hidden" name="id" value={jugador.id} />

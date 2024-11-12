@@ -5,6 +5,7 @@ export const player = sqliteTable("player", {
 	id: integer("id").primaryKey().notNull(),
 	nombre: text("nombre").notNull(),
 	grado: text("grado"),
+	userId: integer("user_id"),
 });
 
 export const equipos = sqliteTable("equipos", {
