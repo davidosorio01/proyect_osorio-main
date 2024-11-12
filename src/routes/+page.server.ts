@@ -82,12 +82,13 @@ export const actions: Actions = {
 		}
 		
 		const values = {  
-			nombres: data.nombre || "", // Asegúrate de que coincidan los nombres
+			nombres: data.nombre || "",  
 			apellidos: data.apellido || "",  
-			email: data.email || "",
+			email: data.email || "",  
 			passwordHash: await bcrypt.hash(data.password, 10),  
-			token: crypto.randomUUID()  
-		};  
+			token: crypto.randomUUID(),  
+			nacimiento: data.nacimiento
+		}; 
 		
 		await db.insert(usuarios).values(values);
 		
