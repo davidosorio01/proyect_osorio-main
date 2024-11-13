@@ -28,12 +28,12 @@
 	<h1>AGREGATE COMO JUGADOR</h1>
 
 	<form method="POST" action="?/crear">
-		<div>
+		<div class="name">
 			<label for="nombre"> Nombre del Jugador </label>
 			<input name="nombre" type="text" placeholder="Ingresa el nombre" autocomplete="off" />
 		</div>
 
-		<div>
+		<div class="grade">
 			<label for="grado"> Grado </label>
 			<input name="grado" type="text" placeholder="Ingresa el grado" autocomplete="off" />
 		</div>

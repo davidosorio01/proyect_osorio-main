@@ -293,3 +293,30 @@ button.next.svelte-zonnq2 .arrow:where(.svelte-zonnq2):before {
 button.next.svelte-zonnq2:hover .arrow:where(.svelte-zonnq2) {  
     transform: translate(3px);  /* Desplazamiento a la derecha al pasar el mouse */  
 }
+@media (max-width: 570px) {
+    form {
+        padding: 0 1.5rem;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .panel .content {
+        padding: 0.5rem 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .container:before {
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .container.sign-up-mode:before {
+        bottom: 28%;
+        left: 50%;
+    }
+}

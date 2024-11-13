@@ -3,7 +3,6 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #eee;
 }
 /* Ajuste para la alineación de los botones */  
@@ -24,9 +23,20 @@ body {
     transition: transform 0.2s ease, background-color 0.2s ease;  
 }  
 
+h2{
+    margin-left: 18px;
+}
+
+.name, .grade{
+    margin-left: 80px ;
+    margin-right: 80px;
+}
+
+
 /* Botón Primario */  
 .btn-primary {  
-    background-color: #3498db; /* Azul */  
+    background-color: #3498db;
+    margin: auto;
     color: white;  
 }  
 
@@ -37,7 +47,8 @@ body {
 
 /* Botón Secundario */  
 .btn-secondary {  
-    background-color: #7f8c8d; /* Gris */  
+    background-color: #7f8c8d; 
+    margin: auto;
     color: white;  
 }  
 
@@ -53,28 +64,28 @@ input[type="text"] {
     border: 1px solid #ccc;  
     border-radius: 5px;  
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación de transición */  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
     width: 100%;  
     box-sizing: border-box;  
     margin-bottom: 15px; /* Margen inferior para separar de los botones */  
 }
 /* Estilos del navbar */
 .navbar {
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #b60f1d;
-    padding: 1px 10px;
     color: white;
-    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+  
 }
 
 .navbar img {
     width: 200px;
-    height: 110px; /* Ajuste del tamaño de la imagen */
-    border-radius: 50%; /* Imagen redonda */
+    height: 110px; 
+    border-radius: 50%; 
 }
 
 .navbar .back-button {
@@ -125,7 +136,7 @@ input[type="text"]:hover,
 input[type="text"]:focus {
     transform: translateY(-5px); /* Desplazamiento hacia arriba */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    border-color: #3498db; /* Color del borde */
+    border-color: #3498db; 
     outline: none;
 }
 
@@ -134,8 +145,9 @@ input[type="text"]::placeholder {
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 700px;
+    height: 600px;
+    margin: 50px auto;
     padding: 20px;
     background: white;
     border-radius: 8px;
@@ -204,4 +216,32 @@ button:hover {
 
 .editar:hover {
     background-color: #2980b9;
+}
+
+@media (max-width: 570px) {
+    form {
+        padding: 0 1.5rem;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .panel .content {
+        padding: 0.5rem 1rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .container:before {
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .container.sign-up-mode:before {
+        bottom: 28%;
+        left: 50%;
+    }
 }
