@@ -1,0 +1,150 @@
+/* Importación de fuentes */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap");
+
+* {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* Estilo del nav y encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(184, 15, 29);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+}
+
+.red h1{
+    text-align: center;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between; /* Alinea logo y "Sobre Nosotros" a cada extremo */
+	align-items: center;
+	width: 100%;
+	max-width: 1200px; /* Para limitar el ancho de contenido en pantallas grandes */
+	padding: 0 2rem; /* Espacio a los lados */
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+}
+
+.brand i {
+	margin-right: 10px; /* Espacio entre el icono y el texto */
+	color: white;
+}
+
+.menu-container nav {
+	display: flex;
+	align-items: center;
+    margin-left: 300px;
+}
+
+.lesson {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 2rem; /* Espaciado desde el logo */
+	color: white;
+}
+
+/* Estilos de contenedor */
+.container {
+    max-width: 900px;
+    padding: 120px 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Sección de equipo */
+.about{
+    text-align: center;
+}
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.member {
+    text-align: center;
+    width: 20%;
+}
+
+.about-images img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.about-images img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.member p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Redes sociales */
+.box__footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 40px; /* Espaciado entre iconos */
+}
+
+.box__footer a {
+    color: #000;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+.box__footer a svg {
+    width: 30px; 
+    height: 30px; 
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.box__copyright p {
+    color: #080606;
+    margin-top: 20px;
+}
+
+/* Línea divisora central */
+hr {
+    border: 1px solid #000;
+    width: 80%;
+    margin: 0 auto;
+}

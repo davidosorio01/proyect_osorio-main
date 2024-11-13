@@ -183,7 +183,7 @@
 					mundo tan vasto.
 				</p>
 				<a
-					href="/Menu"
+					href="/saber_mas"
 					class="btn__text-about btn__text"
 					data-sveltekit-preload-data="tap"
 					data-sveltekit-reload>Saber Más</a
