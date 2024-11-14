@@ -12,7 +12,7 @@
 
 <div class="navbar" data-sveltekit-preload-data="tap" data-sveltekit-reload>
 	<h2>
-		<a href="/Menu" class="brand" data-sveltekit-preload-data="tap" data-sveltekit-reload>
+		<a href="/prueba" class="brand" data-sveltekit-preload-data="tap" data-sveltekit-reload>
 			<i class="bx bx-run"></i>
 			<span class="text">SPORT SCORE</span>
 		</a>
