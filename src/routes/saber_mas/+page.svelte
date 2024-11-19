@@ -1,5 +1,5 @@
 <script>
-	import BotonVolver from '$lib/componentes/BotonVolver.svelte';
+	import BotonVolver2 from '$lib/componentes/BotonVolver2.svelte'
 	import '$lib/CSS/saber_mas.css';
 	import david from '$lib/IMAGES/images_saber_mas/DavidOsorio.jpg';
 	import aguiar from '$lib/IMAGES/images_saber_mas/JoseDavidAguiar.jpg';
@@ -32,7 +32,7 @@
 					<div class="lesson">Sobre Nosotros</div>
 				</nav>
 			</div>
-			<BotonVolver />
+			<BotonVolver2/>
 		</div>
 	</header>
 </div>
