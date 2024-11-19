@@ -14,7 +14,6 @@
 	import sports from '$lib/IMAGES/LogoSport.jpg';
 	import M from '$lib/IMAGES/LogoM.jpg';
 	import MD from '$lib/IMAGES/LogoMD.png';
-	import LogoPagina from '$lib/IMAGES/LogoPag.jpg';
 	import '$lib/CSS/Menu.css';
 	import Swal from 'sweetalert2';
 
@@ -36,13 +35,50 @@
 	// Llamar a la función al iniciar el componente (cuando se monta)
 	showWelcomeModal();
 
-	// Función para mostrar el modal de inicio de sesión
+	// Función para mostrar el modal de confirmación de cierre de sesión
 	function showLoginModal() {
 		Swal.fire({
-			title: '¡Ya estás vinculado!',
-			text: 'No necesitas iniciar sesión nuevamente.',
-			icon: 'info',
-			confirmButtonText: 'Continuar'
+			title: '¿Estás seguro?',
+			text: 'Si aceptas, cerrarás sesión.',
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonText: 'Cerrar sesión',
+			cancelButtonText: 'Cancelar',
+			reverseButtons: true // Botones invertidos para mejor UX
+		}).then((result) => {
+			if (result.isConfirmed) {
+				// Realiza una petición al backend para cerrar sesión
+				fetch('/Menu?/cerrar', {
+					credentials: 'include'
+				})
+					.then((response) => {
+						if (response.ok) {
+							return response.json();
+						}
+						throw new Error('Error en el cierre de sesión');
+					})
+					.then((data) => {
+						if (data.success) {
+							Swal.fire({
+								title: '¡Sesión cerrada!',
+								text: 'Tu sesión se ha cerrado correctamente.',
+								icon: 'success',
+								confirmButtonText: 'Aceptar'
+							}).then(() => {
+								window.location.href = '/';
+							});
+						}
+					})
+					.catch((error) => {
+						console.error('Error al cerrar sesión:', error);
+						Swal.fire({
+							title: 'Error',
+							text: 'No se pudo cerrar sesión. Inténtalo más tarde.',
+							icon: 'error',
+							confirmButtonText: 'Aceptar'
+						});
+					});
+			}
 		});
 	}
 
@@ -134,7 +170,7 @@
 						on:click|preventDefault={showLoginModal}
 						class="btn__quote"
 						data-sveltekit-preload-data="tap"
-						data-sveltekit-reload>INICIAR SESIÓN</a
+						data-sveltekit-reload>CERRAR SESIÓN</a
 					>
 				</div>
 			</div>
